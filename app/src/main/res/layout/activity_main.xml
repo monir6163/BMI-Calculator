@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="500"
+        android:textDirection="inherit"
+        android:gravity="center"
+        android:textColor="#EC0707"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার ওজন কত (KG)?"
+        android:textFontWeight="500"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Weight in kg"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার উচ্চতা কত ফুট কত ইঞ্চি?"
+        android:textFontWeight="500"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <EditText
+            android:id="@+id/heightFit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Height in Fit"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/heightInc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Height in Inc"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bmiCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        />
+    <TextView
+        android:id="@+id/displayBmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#808080"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+    <TextView
+        android:id="@+id/displayBmiRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#808080"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+
+</LinearLayout>
